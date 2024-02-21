@@ -17,10 +17,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const theme = cookies().get('theme') 
+  const theme = cookies().get('theme') ?? {value:''} 
   
   return (
-    <html lang="en" className={`${typeof theme === "undefined"?'':theme.value}`}>
+    <html lang="en" className={`${theme.value}`}>
       <body className={inter.className}>
         <Header/>
         {children}
