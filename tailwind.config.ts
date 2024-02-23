@@ -10,7 +10,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'primary':'#73C7E3'
+        'primary': {
+          100: '#73C7E3',
+          200: '#66B3CC'
+        }
+      },
+      fontFamily: {
+        fredoka: ['var(--font-fredoka)']
       }
     },
   },

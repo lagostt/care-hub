@@ -1,4 +1,10 @@
 
+export interface NavItemData  {
+    name: string,
+    link: string,
+    className?: string
+}
+
 export const landingPageItems = [
    {
         name: 'Home',
