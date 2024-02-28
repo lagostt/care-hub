@@ -22,7 +22,7 @@ export default function Card({ image, title, body }:CardProps) {
     </div>
 
     return (
-        <div className=' flex flex-col h-[450px] lg:w-[400px] w-auto flex-none border-2 rounded-md shadow-md '>
+        <div className=' flex flex-col h-[450px] flex-none border-2 rounded-md shadow-md lg:w-[30%] w-[70%] '>
             <Img/>
             <Title/>
             <Body/>
