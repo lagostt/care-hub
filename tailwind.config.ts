@@ -12,11 +12,16 @@ const config: Config = {
       colors: {
         'primary': {
           100: '#73C7E3',
-          200: '#66B3CC'
-        }
+          200: '#66B3CC',
+          300: '#124759'
+        },
       },
       fontFamily: {
         fredoka: ['var(--font-fredoka)']
+      },
+      spacing: {
+        'gpx': '48px',
+        'spx': '36px',
       }
     },
   },
