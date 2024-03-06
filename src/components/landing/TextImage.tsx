@@ -21,12 +21,12 @@ export default function TextImage() {
                  body="At Care Hub Clinic, we prioritize your comfort. Our welcoming environment and compassionate staff ensure you feel at ease throughout your visit. Experience personalized care in a setting designed to make you feel relaxed and supported. Welcome to Care Hub Clinic, where your comfort is our priority."
                 />
                <div className="flex flex-row lg:justify-end justify-center lg:order-2 order-1">
-                 <Image src='/image/patient.jpeg' alt='comfortable' width={500} height={300} className=" basis-1/2 shadow-md rounded-md"/>
+                 <Image src='/image/patient_1.jpg' alt='comfortable' width={500} height={300} className=" basis-1/2 shadow-md rounded-md"/>
                </div>
             </div>
             <div className="flex lg:flex-row flex-col w-full justify-center items-center mt-10 lg:gap-[5%] ">
                <div className="flex flex-row lg:justify-start justify-center">
-                 <Image src='/image/equipment.jpeg' alt='equipment' width={500} height={100} className=" basis-1/2 shadow-md rounded-md " />
+                 <Image src='/image/equipment_1.jpg' alt='equipment' width={500} height={100} className=" basis-1/2 shadow-md rounded-md " />
                </div>
                <TextSection 
                  style=""
