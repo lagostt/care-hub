@@ -1,5 +1,4 @@
 "use client"
-import { cookies } from "next/headers"
 import NavBarLinks from "./NavBarLinks"
 import { landingPageItems } from "./navItems"
 import NavButton from "./NavButton"
@@ -15,7 +14,7 @@ export default function NavBar(){
     const [drawerIsOpen, setDrawerIsOpen] = useState(false);
 
     return (
-        <header className=" flex flex-row items-center w-full h-16 lg:px-gpx px-spx py-6 border-b border-slate-900/10 ">
+        <header className=" fixed top-0 z-[5] bg-white flex flex-row items-center w-full h-16 lg:px-gpx px-spx py-6 border-b border-slate-900/10 ">
             <Logo link="/"/>
             <NavBarLinks items={ landingPageItems } className=" ml-auto " />
             <div className=" hidden lg:flex items-center border-l border-stale-200 ml-6 pl-6 ">

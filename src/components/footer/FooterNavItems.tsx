@@ -14,14 +14,14 @@ export default function FooterNavItems() {
 
     const iconSize = 48
     const FooterItem = ({ name, url }: FooterItem) => 
-    <Link href={url} className="px-5 text-lg lg:basis-1/5 basis-1 ">
+    <Link href={url} className="px-5 text-lg">
         {name}
     </Link>
 
     return (
         <div className="flex lg:flex-row flex-col gap-y-5 w-full lg:justify-between items-center justify-center"> 
             <Logo link="/home"/>
-            <div className=" flex justify-center items-center lg:flex-row lg:justify-normal lg:items-start w-full h-auto ">
+            <div className=" flex flex-col justify-center items-center lg:flex-row lg:items-start w-full h-auto ">
               {
                  items.map( ({ name, url }) => <FooterItem key= { name } name={ name } url={ url } /> )
               }

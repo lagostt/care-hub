@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Fredoka } from "next/font/google";
 import NavBar from "@/components/navbar/NavBar";
 import "./globals.css";
@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   description: "Clinic homepage",
 };
 
+export const viewport: Viewport = {
+  initialScale: 1,
+  width: 'device-width'
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,7 +31,7 @@ export default function RootLayout({
   
   return (
     <html lang="en" className={`${value}`}>
-      <body className={`${inter.className} ${fredoka.variable}`}>
+      <body className={`${inter.className} ${fredoka.variable}  `}>
         <NavBar/>
         {children}
         <Footer/>
